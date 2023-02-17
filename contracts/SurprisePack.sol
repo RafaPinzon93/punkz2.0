@@ -316,6 +316,7 @@ contract SurprisePack is
         if (_isPunkMinted[tokenId]) {
             revert PunkAlreadyMinted();
         }
+        _isPunkMinted[tokenId] = true;
         (
             bool hasBeard,
             bool hasTongue,
@@ -336,6 +337,18 @@ contract SurprisePack is
         if (accessoriesCount > totalAccesories) revert TooManyAccessories();
 
         IPunkz(_collectionz.punkz).mint(_msgSender(), tokenId, fixedConfig);
+
+        IPunkItemz(_collectionz.background).nestMint(
+            _collectionz.punkz,
+            tokenId,
+            uint8(itemsConfig.background)
+        );
+
+        IPunkItemz(_collectionz.clothing).nestMint(
+            _collectionz.punkz,
+            tokenId,
+            uint8(itemsConfig.clothing)
+        );
 
         if (itemsConfig.cap != PunkzConfig.Cap.None)
             IPunkItemz(_collectionz.caps).nestMint(

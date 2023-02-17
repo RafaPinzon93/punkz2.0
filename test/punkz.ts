@@ -10,7 +10,7 @@ import {
   PunkzChain,
   PunkzCigar,
   PunkzClothing,
-  PunkzEaring,
+  PunkzEarring,
   PunkzGlasses,
   PunkzMask,
   SurprisePack,
@@ -31,7 +31,7 @@ async function fixture(): Promise<{
   punkzBackground: PunkzBackground;
   punkzMask: PunkzMask;
   punkzChain: PunkzChain;
-  punkzEaring: PunkzEaring;
+  punkzEarring: PunkzEarring;
   punkzGlasses: PunkzGlasses;
   punkzCigar: PunkzCigar;
   punkzClothing: PunkzClothing;
@@ -45,7 +45,7 @@ async function fixture(): Promise<{
     punkzBackground,
     punkzMask,
     punkzChain,
-    punkzEaring,
+    punkzEarring,
     punkzGlasses,
     punkzCigar,
     punkzClothing,
@@ -62,7 +62,7 @@ async function fixture(): Promise<{
     punkzBackground,
     punkzMask,
     punkzChain,
-    punkzEaring,
+    punkzEarring,
     punkzGlasses,
     punkzCigar,
     punkzClothing,
@@ -82,7 +82,7 @@ describe('SimpleEquippable Assets', async () => {
   let punkzBackground: PunkzBackground;
   let punkzMask: PunkzMask;
   let punkzChain: PunkzChain;
-  let punkzEaring: PunkzEaring;
+  let punkzEarring: PunkzEarring;
   let punkzGlasses: PunkzGlasses;
   let punkzCigar: PunkzCigar;
   let punkzClothing: PunkzClothing;
@@ -99,7 +99,7 @@ describe('SimpleEquippable Assets', async () => {
       punkzBackground,
       punkzMask,
       punkzChain,
-      punkzEaring,
+      punkzEarring,
       punkzGlasses,
       punkzCigar,
       punkzClothing,
@@ -144,7 +144,7 @@ describe('SimpleEquippable Assets', async () => {
         clothing: 2,
         mask: 2,
         chain: 0,
-        earing: 0,
+        earring: 0,
         glasses: 0,
         cigar: 0,
         cap: 0,

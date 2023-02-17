@@ -7,6 +7,7 @@ import "@rmrk-team/evm-contracts/contracts/RMRK/extension/RMRKRoyalties.sol";
 import "@rmrk-team/evm-contracts/contracts/RMRK/utils/RMRKCollectionMetadata.sol";
 import "@rmrk-team/evm-contracts/contracts/RMRK/utils/RMRKMintingUtils.sol";
 import "@rmrk-team/evm-contracts/contracts/implementations/IRMRKInitData.sol";
+import "@rmrk-team/evm-contracts/contracts/RMRK/utils/RMRKEquipRenderUtils.sol";
 import "./IPunkz.sol";
 
 error InvalidType();

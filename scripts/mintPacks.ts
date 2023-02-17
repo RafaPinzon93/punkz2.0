@@ -4,7 +4,7 @@ import { SurprisePack } from '../typechain-types';
 
 import { PRICE_PER_MINT_COMMON, PRICE_PER_MINT_RARE, PRICE_PER_MINT_EPIC } from './constants';
 
-const PACK_ADDRESS = '0x998b4DCbCf46255BB3Cb30e80dF75dc72E193D2D';
+const PACK_ADDRESS = '0xDD615691E5f06D8804709aeC6A18AF4Eb6c7cdfA';
 
 async function mintPacks(total: number, rarity: number): Promise<void> {
   const [deployer] = await ethers.getSigners();
